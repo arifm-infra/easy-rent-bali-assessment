@@ -1,0 +1,8 @@
+requirements.txt
+# Easy Rent Bali — Option C Assessment
+# All implementation uses Python 3.11+ standard library only.
+# No third-party packages are required to run the solution or tests.
+#
+# Optional (dev only — not required):
+#   pytest  — for running tests with the `pytest` runner
+#             (unittest runner works without it: python -m unittest discover)

@@ -1,0 +1,358 @@
+{
+  "generated_at": "2026-10-30T20:53:54.108441+00:00",
+  "note": "Simulated reconciliation. No real alerts were delivered. Dispatch results reflect mock sender behaviour only.",
+  "summary": {
+    "total_vehicles": 8,
+    "vehicles_with_incidents": 6,
+    "vehicles_clear": 2,
+    "incident_tag_counts": {
+      "CRITICAL_SECURITY_ALERT": 2,
+      "MAINTENANCE_REQUIRED": 3,
+      "OFFLINE_TELEMETRY_DROP": 1
+    }
+  },
+  "vehicles": [
+    {
+      "device_id": "iot_car_01",
+      "plate": "DK 1234 AB",
+      "model": "Toyota Avanza",
+      "status": "rented",
+      "zone": "CANGGU",
+      "incident_tags": [],
+      "tag_reasons": {},
+      "alert_payloads": [],
+      "dispatch_results": []
+    },
+    {
+      "device_id": "iot_car_02",
+      "plate": "DK 5678 CD",
+      "model": "Mitsubishi Xpander",
+      "status": "available",
+      "zone": "KUTA_HUB",
+      "incident_tags": [
+        "CRITICAL_SECURITY_ALERT"
+      ],
+      "tag_reasons": {
+        "CRITICAL_SECURITY_ALERT": "available vehicle moving at 52 km/h (should be stationary)"
+      },
+      "alert_payloads": [
+        {
+          "alert_id": "ALT_291F22E01B74",
+          "device_id": "iot_car_02",
+          "plate": "DK 5678 CD",
+          "model": "Mitsubishi Xpander",
+          "status": "available",
+          "zone": "KUTA_HUB",
+          "incident_tag": "CRITICAL_SECURITY_ALERT",
+          "severity": "CRITICAL",
+          "channels": [
+            "ops_manager",
+            "security_team"
+          ],
+          "reason": "available vehicle moving at 52 km/h (should be stationary)",
+          "battery_voltage": 12.8,
+          "fuel_percent": 82,
+          "last_ping_seconds_ago": 20,
+          "gateway_id": "gw_kuta_01",
+          "simulated": true,
+          "note": "This is a simulated alert. No real notification was delivered."
+        }
+      ],
+      "dispatch_results": [
+        {
+          "alert_id": "ALT_291F22E01B74",
+          "device_id": "iot_car_02",
+          "incident_tag": "CRITICAL_SECURITY_ALERT",
+          "delivered": true,
+          "final_status": "delivered_simulated",
+          "attempts": [
+            {
+              "attempt": 1,
+              "success": true,
+              "delay_before_s": 0.0,
+              "error": null
+            }
+          ],
+          "note": "Simulated dispatch only. No real notification delivered."
+        }
+      ]
+    },
+    {
+      "device_id": "iot_car_03",
+      "plate": "DK 9012 EF",
+      "model": "Toyota Innova Zenix",
+      "status": "rented",
+      "zone": "ULUWATU",
+      "incident_tags": [
+        "MAINTENANCE_REQUIRED"
+      ],
+      "tag_reasons": {
+        "MAINTENANCE_REQUIRED": "battery_voltage 11.2V < 11.5V"
+      },
+      "alert_payloads": [
+        {
+          "alert_id": "ALT_5B15DB8306C3",
+          "device_id": "iot_car_03",
+          "plate": "DK 9012 EF",
+          "model": "Toyota Innova Zenix",
+          "status": "rented",
+          "zone": "ULUWATU",
+          "incident_tag": "MAINTENANCE_REQUIRED",
+          "severity": "MEDIUM",
+          "channels": [
+            "maintenance_team"
+          ],
+          "reason": "battery_voltage 11.2V < 11.5V",
+          "battery_voltage": 11.2,
+          "fuel_percent": 45,
+          "last_ping_seconds_ago": 55,
+          "gateway_id": "gw_kuta_01",
+          "simulated": true,
+          "note": "This is a simulated alert. No real notification was delivered."
+        }
+      ],
+      "dispatch_results": [
+        {
+          "alert_id": "ALT_5B15DB8306C3",
+          "device_id": "iot_car_03",
+          "incident_tag": "MAINTENANCE_REQUIRED",
+          "delivered": true,
+          "final_status": "delivered_simulated",
+          "attempts": [
+            {
+              "attempt": 1,
+              "success": true,
+              "delay_before_s": 0.0,
+              "error": null
+            }
+          ],
+          "note": "Simulated dispatch only. No real notification delivered."
+        }
+      ]
+    },
+    {
+      "device_id": "iot_car_04",
+      "plate": "DK 3456 GH",
+      "model": "Suzuki Ertiga",
+      "status": "rented",
+      "zone": "SANUR",
+      "incident_tags": [
+        "MAINTENANCE_REQUIRED"
+      ],
+      "tag_reasons": {
+        "MAINTENANCE_REQUIRED": "fuel_percent 9% < 15%"
+      },
+      "alert_payloads": [
+        {
+          "alert_id": "ALT_01DCD1E0727C",
+          "device_id": "iot_car_04",
+          "plate": "DK 3456 GH",
+          "model": "Suzuki Ertiga",
+          "status": "rented",
+          "zone": "SANUR",
+          "incident_tag": "MAINTENANCE_REQUIRED",
+          "severity": "MEDIUM",
+          "channels": [
+            "maintenance_team"
+          ],
+          "reason": "fuel_percent 9% < 15%",
+          "battery_voltage": 12.4,
+          "fuel_percent": 9,
+          "last_ping_seconds_ago": 110,
+          "gateway_id": "gw_kuta_01",
+          "simulated": true,
+          "note": "This is a simulated alert. No real notification was delivered."
+        }
+      ],
+      "dispatch_results": [
+        {
+          "alert_id": "ALT_01DCD1E0727C",
+          "device_id": "iot_car_04",
+          "incident_tag": "MAINTENANCE_REQUIRED",
+          "delivered": true,
+          "final_status": "delivered_simulated",
+          "attempts": [
+            {
+              "attempt": 1,
+              "success": true,
+              "delay_before_s": 0.0,
+              "error": null
+            }
+          ],
+          "note": "Simulated dispatch only. No real notification delivered."
+        }
+      ]
+    },
+    {
+      "device_id": "iot_car_05",
+      "plate": "DK 7890 IJ",
+      "model": "Toyota Fortuner",
+      "status": "rented",
+      "zone": "RESTRICTED_OFFROAD_BATUKARU",
+      "incident_tags": [
+        "CRITICAL_SECURITY_ALERT"
+      ],
+      "tag_reasons": {
+        "CRITICAL_SECURITY_ALERT": "vehicle entered restricted zone 'RESTRICTED_OFFROAD_BATUKARU' (policy: no-go area under rental contract)"
+      },
+      "alert_payloads": [
+        {
+          "alert_id": "ALT_63F683C273F7",
+          "device_id": "iot_car_05",
+          "plate": "DK 7890 IJ",
+          "model": "Toyota Fortuner",
+          "status": "rented",
+          "zone": "RESTRICTED_OFFROAD_BATUKARU",
+          "incident_tag": "CRITICAL_SECURITY_ALERT",
+          "severity": "CRITICAL",
+          "channels": [
+            "ops_manager",
+            "security_team"
+          ],
+          "reason": "vehicle entered restricted zone 'RESTRICTED_OFFROAD_BATUKARU' (policy: no-go area under rental contract)",
+          "battery_voltage": 12.9,
+          "fuel_percent": 54,
+          "last_ping_seconds_ago": 80,
+          "gateway_id": "gw_kuta_01",
+          "simulated": true,
+          "note": "This is a simulated alert. No real notification was delivered."
+        }
+      ],
+      "dispatch_results": [
+        {
+          "alert_id": "ALT_63F683C273F7",
+          "device_id": "iot_car_05",
+          "incident_tag": "CRITICAL_SECURITY_ALERT",
+          "delivered": true,
+          "final_status": "delivered_simulated",
+          "attempts": [
+            {
+              "attempt": 1,
+              "success": true,
+              "delay_before_s": 0.0,
+              "error": null
+            }
+          ],
+          "note": "Simulated dispatch only. No real notification delivered."
+        }
+      ]
+    },
+    {
+      "device_id": "iot_car_06",
+      "plate": "DK 2345 KL",
+      "model": "Toyota Raize",
+      "status": "rented",
+      "zone": "KUTA_HUB",
+      "incident_tags": [
+        "OFFLINE_TELEMETRY_DROP"
+      ],
+      "tag_reasons": {
+        "OFFLINE_TELEMETRY_DROP": "last ping 1320s ago (>900s threshold; vehicle status=rented)"
+      },
+      "alert_payloads": [
+        {
+          "alert_id": "ALT_1D13BE0BB40F",
+          "device_id": "iot_car_06",
+          "plate": "DK 2345 KL",
+          "model": "Toyota Raize",
+          "status": "rented",
+          "zone": "KUTA_HUB",
+          "incident_tag": "OFFLINE_TELEMETRY_DROP",
+          "severity": "HIGH",
+          "channels": [
+            "fleet_ops"
+          ],
+          "reason": "last ping 1320s ago (>900s threshold; vehicle status=rented)",
+          "battery_voltage": 12.5,
+          "fuel_percent": 88,
+          "last_ping_seconds_ago": 1320,
+          "gateway_id": "gw_kuta_01",
+          "simulated": true,
+          "note": "This is a simulated alert. No real notification was delivered."
+        }
+      ],
+      "dispatch_results": [
+        {
+          "alert_id": "ALT_1D13BE0BB40F",
+          "device_id": "iot_car_06",
+          "incident_tag": "OFFLINE_TELEMETRY_DROP",
+          "delivered": true,
+          "final_status": "delivered_simulated",
+          "attempts": [
+            {
+              "attempt": 1,
+              "success": true,
+              "delay_before_s": 0.0,
+              "error": null
+            }
+          ],
+          "note": "Simulated dispatch only. No real notification delivered."
+        }
+      ]
+    },
+    {
+      "device_id": "iot_car_07",
+      "plate": "DK 6789 MN",
+      "model": "Daihatsu Xenia",
+      "status": "available",
+      "zone": "KUTA_HUB",
+      "incident_tags": [],
+      "tag_reasons": {},
+      "alert_payloads": [],
+      "dispatch_results": []
+    },
+    {
+      "device_id": "iot_car_08",
+      "plate": "DK 4567 OP",
+      "model": "Honda Brio",
+      "status": "available",
+      "zone": "KUTA_HUB",
+      "incident_tags": [
+        "MAINTENANCE_REQUIRED"
+      ],
+      "tag_reasons": {
+        "MAINTENANCE_REQUIRED": "battery_voltage 11.3V < 11.5V; fuel_percent 11% < 15%"
+      },
+      "alert_payloads": [
+        {
+          "alert_id": "ALT_F4ED8D6333B7",
+          "device_id": "iot_car_08",
+          "plate": "DK 4567 OP",
+          "model": "Honda Brio",
+          "status": "available",
+          "zone": "KUTA_HUB",
+          "incident_tag": "MAINTENANCE_REQUIRED",
+          "severity": "MEDIUM",
+          "channels": [
+            "maintenance_team"
+          ],
+          "reason": "battery_voltage 11.3V < 11.5V; fuel_percent 11% < 15%",
+          "battery_voltage": 11.3,
+          "fuel_percent": 11,
+          "last_ping_seconds_ago": 15,
+          "gateway_id": "gw_kuta_01",
+          "simulated": true,
+          "note": "This is a simulated alert. No real notification was delivered."
+        }
+      ],
+      "dispatch_results": [
+        {
+          "alert_id": "ALT_F4ED8D6333B7",
+          "device_id": "iot_car_08",
+          "incident_tag": "MAINTENANCE_REQUIRED",
+          "delivered": true,
+          "final_status": "delivered_simulated",
+          "attempts": [
+            {
+              "attempt": 1,
+              "success": true,
+              "delay_before_s": 0.0,
+              "error": null
+            }
+          ],
+          "note": "Simulated dispatch only. No real notification delivered."
+        }
+      ]
+    }
+  ]
+}
